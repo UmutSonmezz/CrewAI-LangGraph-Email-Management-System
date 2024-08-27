@@ -1,5 +1,4 @@
-# CrewAI-LangGraph-Email-Management
-# Project Name: Email Management System
+# CrewAI-LangGraph-Email-Management-System
 
 #  Description: This project demonstrates how to use CrewAI in conjunction with LangChain and LangGraph to automate the management of incoming emails. The system consists of three autonomous agents, each designed for a specific purpose:
 
