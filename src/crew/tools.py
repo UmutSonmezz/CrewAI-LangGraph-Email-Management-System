@@ -23,7 +23,3 @@ class CreateDraftTool():
 		})
         return f"\nDraft created: {result}\n"
 
-
-class CreateDraftTool():
-  @tool("Create Draft")
-  def create_draft(data):
