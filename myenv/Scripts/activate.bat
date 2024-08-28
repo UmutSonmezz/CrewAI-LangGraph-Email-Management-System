@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\umut_\OneDrive\Masaüstü\CrewAI_LangGraph\myenv
+set VIRTUAL_ENV=A:\CrewAI_LangGraph\myenv
 
 if not defined PROMPT set PROMPT=$P$G
 
