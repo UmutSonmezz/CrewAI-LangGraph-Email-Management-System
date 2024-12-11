@@ -13,7 +13,7 @@ class WorkFlow():
 
         workflow.add_node("check_new_emails", nodes.check_email)
         workflow.add_node("wait_next_run", nodes.wait_next_run)
-        workflow.add_node("draft_response", EmailFilterCrew().kickoff)  # Burayı değiştirdim
+        workflow.add_node("draft_response", EmailFilterCrew().kickoff)  
 
         workflow.set_entry_point("check_new_emails")
         
@@ -21,12 +21,12 @@ class WorkFlow():
             "check_new_emails",
             nodes.new_emails,
             {
-                "continue": 'draft_response',  # Burayı değiştirdim
+                "continue": 'draft_response',  
                 "end": 'wait_next_run'
             }
         )
 
-        workflow.add_edge('draft_response', 'wait_next_run')  # Burayı değiştirdim
+        workflow.add_edge('draft_response', 'wait_next_run')  
         workflow.add_edge('wait_next_run', 'check_new_emails')
         
         self.app = workflow.compile()
